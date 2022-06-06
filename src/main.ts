@@ -3,7 +3,7 @@ import { Customer } from "./entity/customer";
 import { Order } from "./entity/order";
 import { OrderItem } from "./entity/orderItem";
 
-let customer = new Customer("123", "Johnny", "deep");
+let customer = new Customer("123", "Johnny");
 let address = new Address("rua 123", 4, "12345678", "city");
 
 // Id Relation
