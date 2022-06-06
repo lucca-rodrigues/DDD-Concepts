@@ -11,4 +11,11 @@ describe("Customer unit tests", () => {
       let customer = new Customer("1", "");
     }).toThrowError("Name is mandatory to activate a customer");
   });
+
+  it("should change name ", () => {
+    const customer = new Customer("1", "John");
+    customer.changeName("Jane");
+
+    expect(customer.name).toBe("Jane");
+  });
 });

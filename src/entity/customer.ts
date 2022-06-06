@@ -20,8 +20,13 @@ export class Customer {
     }
   }
 
+  get name(): string {
+    return this._name;
+  }
+
   changeName(name: string) {
     this._name = name;
+    this.validate();
   }
 
   activate() {
