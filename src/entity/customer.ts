@@ -35,9 +35,12 @@ export class Customer {
     }
     this._active = true;
   }
-
   deactivate() {
     this._active = false;
+  }
+
+  isActive(): boolean {
+    return this._active;
   }
 
   set Address(address: Address) {
