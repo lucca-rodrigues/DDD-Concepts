@@ -29,9 +29,9 @@ describe("Customer unit tests", () => {
     const orderTwo = new Order("123", "123", [item, itemTwo]);
 
     const total = order.total();
-    const orderTwoTotal = orderTwo.total();
-
     expect(total).toBe(100);
+
+    const orderTwoTotal = orderTwo.total();
     expect(orderTwoTotal).toBe(250);
   });
 });
