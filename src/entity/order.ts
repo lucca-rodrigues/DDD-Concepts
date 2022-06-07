@@ -11,6 +11,8 @@ export class Order {
     this._customerId = customerId;
     this._items = items;
     this._total = this.total();
+
+    this.validate();
   }
 
   validate(): boolean {
