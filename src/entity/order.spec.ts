@@ -27,13 +27,11 @@ describe("Customer unit tests", () => {
 
     const order = new Order("123", "123", [item]);
     const orderTwo = new Order("123", "123", [item, itemTwo]);
-    const orderTotal = order.total();
-    const orderTwoTotal = order.total();
 
     const total = order.total();
-    const orderTotalTotal = orderTwo.total();
+    const orderTwoTotal = orderTwo.total();
 
     expect(total).toBe(100);
-    expect(orderTotalTotal).toBe(250);
+    expect(orderTwoTotal).toBe(250);
   });
 });
