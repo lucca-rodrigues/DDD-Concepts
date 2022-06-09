@@ -1,4 +1,4 @@
-import { Order } from "../../entity/order/index";
+import { Order } from "entity/order";
 
 export class OrderService {
   static getTotal(orders: Order[]): number {
